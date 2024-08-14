@@ -225,7 +225,7 @@ public:
 				(double)gripper_com_pose(5));
 
 		gripper_com = tf::StampedTransform(tf::Transform(q, p),
-				ros::Time::now(),
+				ros::Time(0),
 				gripper_com_frame_id,
 				gripper_com_child_frame_id);
 
